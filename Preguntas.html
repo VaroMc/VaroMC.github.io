@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro Delcán Pérez">
+    <meta name="keywords" content="tarea, escuela, Porfolio, html, css">
+    <meta name="descripción" content="Página de porfolio explicandocomo soy">
+    <link rel="stylesheet" href="Preguntas.css">
+    <title>Preguntas</title>
+    </head>
+    <body>
+
+        <div class="grid-container">
+            <div class="grid-item1">
+            <header><!--Poner cuando esmenor que el logo se achique y a lo mejor un menú para susttuir el indice-->
+                <h2 class="logo"> <span>R</span>osen</h2>
+                <nav class="navegacion">
+                    <a href="Porfolio Página Principal.html">Inicio</a>
+                    <a href="Porfolio sobre mi.html">Sobre mi</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </header>
+            </div>
+            <div class="grid-item2">
+                <br>
+                <span class="expo">Descripción</span>
+                <br>
+                <br>
+                <p>Busco a 10 programadores para poder lanzar una website de 
+                    jardinería y el mantenimiento de la misma
+                    y a otros 10 jardineros para poder aportar sus conocimientos
+                    y trabajar en tres tiendas de Torremolinos.</p>
+                <br>
+                <br>
+                <span class="expo">Habilidades</span><br><br>
+                <ul>
+                    <li>Programadores</li>
+                </ul><br>
+                <br>
+                <p>Capacidad para solucionar problemas de forma creativa
+                    y eficiente. Conocimientos de ciberseguridad y de los
+                    siguientes lenguajes: HTML, CSS, JavaScript y Git.
+                </p>
+                <br>
+                <ul>
+                    <li>Jardineros</li>
+                </ul><br><br>
+                <p>
+                    Conocimientos de jardinería y capacidad de atender un comercio
+                    local y poder resolver las dudas de los consumidores. Vivr cerca
+                    de Torremolinos o tener la capacidad de poder trabajar estando 
+                    fisicamente en la tienda. 
+                </p>
+            </div> 
+            <div class="grid-item3">
+                <div class="side">
+                    <fieldset>
+                        <legend>Datos Personales</legend><br>
+                        <form action="#" class="form-contact" method="post" tabindex="1" onsubmit="mostrarDatos(); return false;">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-contact-input" name="nombre" id="nombre" placeholder="Nombre" required />
+                            <br><br>
+                            <label for="nombre">Apellidos:</label>
+                            <input type="text" class="form-contact-input" name="apellido" id="apellido" placeholder="Apellido" required />                            
+                            <br><br>
+                                <label for="nombre">Teléfono:</label>
+                                <input type="tel" class="form-contact-input" name="tel" id="tel" placeholder="Telefono" />
+                            <br><br>
+                                <label for="nombre">Correo:</label>
+                                <input type="email" class="form-contact-input" name="email" id="email" placeholder="Email" required />
+                            <br><br>
+                            <label for="nombre">Dinos el cargo y por que deberíamos elegirte:</label><br><br>
+                            <textarea class="form-contact-textarea" name="contenido" id="contenido" rows="10" cols="40" placeholder="Escribe tu mensaje" required></textarea><br><br>
+                            <button type="submit" class="form-contact-button">Enviar</button><br>
+                        </form>
+                    </fieldset>   
+                </div>
+                <br><br>        
+            </div>  
+        </div>
+        <script>
+        function mostrarDatos() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var email = document.getElementById("email").value;
+            var tel = document.getElementById("tel").value;
+            var contenido = document.getElementById("contenido").value;
+            var mensajeCompleto = "Muchas gracias por ofrecerce a Rosen\nNombre: " + nombre + "\napellido: " + apellido + "\nEmail: " + email + "\nTeléfono: " + tel + "\nMensaje: " + contenido;
+            alert(mensajeCompleto);
+        }
+        </script>
+    </body>
+</html>
+
+
